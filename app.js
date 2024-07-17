@@ -28,3 +28,7 @@ valueRef.on('value', (snapshot) => {
     const valueA = snapshot.val();
     document.getElementById('value-a').innerText = valueA;
 });
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);

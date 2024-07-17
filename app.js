@@ -15,14 +15,16 @@ const firebaseConfig = {
 };
 
 // Initialize Firebase
-const app = initializeApp(firebaseConfig);
-const database = getDatabase(app);
+firebase.initializeApp(firebaseConfig);
+
+// Get a reference to the database service
+var database = firebase.database();
 
 // Reference to the VALUE/A path in the Realtime Database
-const valueRef = ref(database, 'VALUE/A');
+var valueRef = database.ref('VALUE/A');
 
 // Function to update the HTML with the current value of A
-onValue(valueRef, (snapshot) => {
+valueRef.on('value', (snapshot) => {
     const valueA = snapshot.val();
     document.getElementById('value-a').innerText = valueA;
 });

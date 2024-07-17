@@ -29,10 +29,12 @@
         const valueRef = database.ref('VALUE/A');
 
         // Function to update the HTML with the current value of A
-        valueRef.on('value', (snapshot) => {
-            const valueA = snapshot.val();
-            document.getElementById('value-a').innerText = valueA;
-        });
+        vvalueRef.on('value', (snapshot) => {
+    console.log("Snapshot:", snapshot.val());
+    const valueA = snapshot.val();
+    document.getElementById('value-a').innerText = valueA;
+});
+
     </script>
 </head>
 <body>

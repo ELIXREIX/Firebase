@@ -6,6 +6,7 @@
  *
  * See a full list of supported triggers at https://firebase.google.com/docs/functions
  */
+
 const firebaseConfig = {
     apiKey: "AIzaSyDsFnXQKng4TqXB028BkZAeVo1rPKvJKR0",
     authDomain: "adas-e794b.firebaseapp.com",

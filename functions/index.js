@@ -10,7 +10,7 @@
 const firebaseConfig = {
     apiKey: "AIzaSyDsFnXQKng4TqXB028BkZAeVo1rPKvJKR0",
     authDomain: "adas-e794b.firebaseapp.com",
-    databaseURL: "https://adas-e794b-default-rtdb.firebaseio.com",
+    databaseURL: "adas-e794b-default-rtdb.firebaseio.com",
     projectId: "adas-e794b",
     storageBucket: "adas-e794b.appspot.com",
     messagingSenderId: "851207966004",

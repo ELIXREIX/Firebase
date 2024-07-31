@@ -1,6 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Firebase</title>
     <!-- Firebase SDKs (compatibility versions) -->
     <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app-compat.js"></script>
@@ -11,7 +13,7 @@
         const firebaseConfig = {
             apiKey: "AIzaSyDsFnXQKng4TqXB028BkZAeVo1rPKvJKR0",
             authDomain: "adas-e794b.firebaseapp.com",
-            databaseURL: "https://adas-e794b-default-rtdb.firebaseio.com",
+            databaseURL: "adas-e794b-default-rtdb.firebaseio.com",
             projectId: "adas-e794b",
             storageBucket: "adas-e794b.appspot.com",
             messagingSenderId: "851207966004",
@@ -36,7 +38,10 @@
     </script>
 </head>
 <body>
-    <h1>Welcome to My Firebase Website</h1>
+    <div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+        <h1>Dashboard</h1>
+    </div>
     <h2>Current Value of A: <span id="value-a"></span></h2>
+    </div>
 </body>
 </html>
